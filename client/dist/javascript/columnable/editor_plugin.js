@@ -73,12 +73,6 @@
                   }
                 },
                 {
-                  text: "Image-Text (Narrower)",
-                  onclick: function () {
-                    ed.execCommand('cmdssimgtxtnarrow');
-                  }
-                },
-                {
                   text: "Text-Image",
                   onclick: function () {
                     ed.execCommand('cmdsstxtimg');
@@ -160,16 +154,6 @@
         ed.addCommand('cmdssimgtxt', function (ed) {
           tinymce.activeEditor.execCommand('mceInsertContent', false,
             '<div class="img_text_layout">' +
-            '<div>' +
-            '<p><img src="' + imgsrc + '" alt="img"></p>' +
-            '</div><div>' +
-            '<p>Donec suscipit ornare ipsum, et sagittis turpis vulputate eget. Sed semper pretium orci, quis luctus odio feugiat quis. Pellentesque efficitur nibh tortor, vel vehicula sem pulvinar non. Nam diam nunc, consectetur nec turpis sit amet, rhoncus placerat ex. Suspendisse elit eros, mattis non tempor vel, ornare sed urna. Donec tristique feugiat risus et sodales. Aenean nunc eros, faucibus et mollis a, lobortis sed massa. Curabitur in ligula ac est pharetra laoreet at a neque. Donec tincidunt varius ultricies.</p>' +
-            '</div></div>');
-        });
-
-        ed.addCommand('cmdssimgtxtnarrow', function (ed) {
-          tinymce.activeEditor.execCommand('mceInsertContent', false,
-            '<div class="img_text_layout smaller_img">' +
             '<div>' +
             '<p><img src="' + imgsrc + '" alt="img"></p>' +
             '</div><div>' +
