@@ -1,0 +1,45 @@
+{
+  "name": "cwchong/silverstripe-columnables",
+  "description": "HTMLEditor columnable module for Silverstripe",
+  "type": "silverstripe-vendormodule",
+  "homepage": "https://movingmouse.com",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "silverstripe",
+    "htmleditor",
+    "columns"
+  ],
+  "authors": [
+    {
+      "name": "Chee Wai",
+      "homepage": "https://movingmouse.com",
+      "email": "cheewai@movingmouse.com"
+    }
+  ],
+  "require": {
+    "silverstripe/admin": "^1@dev",
+    "silverstripe/framework": "^4@dev",
+    "silverstripe/versioned": "^1@dev",
+    "silverstripe/vendor-plugin": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "silverstripe/asset-admin": "^1",
+    "silverstripe/cms": "^4"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    },
+    "expose": [
+      "client/dist"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "Cwchong\\silverstripeColumnables\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
